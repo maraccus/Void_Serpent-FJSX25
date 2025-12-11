@@ -14,7 +14,7 @@
         rgba(0,0,0,0) 2px
     );
     
-    mix-blend-mode: multiply; /* optional for darkening effect */
+    mix-blend-mode: multiply;
     animation: flicker 0.1s infinite;
 }
 
@@ -35,7 +35,7 @@
 
 /* CRT flash inside the game container */
 .crt-flash {
-    position: absolute;       /* absolutely inside container */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -44,14 +44,14 @@
 
     background: white;
     opacity: 0;
-    z-index: 999;             /* above content in container */
+    z-index: 999;
     transform-origin: center;
     overflow: hidden;
 }
 
 /* Triggered animation */
 .crt-flash.active {
-    animation: crtStartup .5s steps(5, start) infinite;
+    animation: crtStartup 1s steps(6, start) infinite;
 }
 
 /* Flash animation */
@@ -62,11 +62,11 @@
     }
     40% {
         opacity: 1;
-        transform: scaleY(0.15); /* vertical collapse */
+        transform: scaleY(0.15);
     }
     60% {
         opacity: 1;
-        transform: scaleY(0.02); /* thin white line */
+        transform: scaleY(0.02);
     }
     100% {
         opacity: 0;

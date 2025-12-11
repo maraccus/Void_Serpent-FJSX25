@@ -10,6 +10,6 @@ document.addEventListener("keydown", (event) => {
 
         setTimeout(() => {
             window.location.href = "game.html";
-        }, 500);
+        }, 1000);
     }
 });
