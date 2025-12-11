@@ -1,10 +1,10 @@
-.flex-c {
+.util-flex-c {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.spacer {
+.util-spacer {
     height: 6rem;
 }

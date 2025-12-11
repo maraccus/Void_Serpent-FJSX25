@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VOID SERPENT by Marcus Johansson FJSX25</title>
+    <link rel="stylesheet" href="css/effects.css">
     <link rel="stylesheet" href="css/util.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body class="flex-c">
+<body class="util-flex-c">
 
-    <div id="menu-screen" class="flex-c">
+    <div id="game-container" class="util-flex-c">
         <h1>VOID SERPENT</h1>
         <h2>A game by Marcus Johansson, FJSX25</h2>
-        <span class="spacer"></span>
-        <p class="blinking-text">Press any key to start...</p>
-        <div class="crt-overlay"></div>
+        <span class="util-spacer"></span>
+        <p class="fx-blinking">Press any key to start...</p>
+        <div id="crt-flash" class="crt-flash"></div>
+        <div class="fx-crt-overlay"></div>
     </div>
-
-</div>
         
+    <script src="src/mainMenu.js"></script>
 </body>
 </html>
