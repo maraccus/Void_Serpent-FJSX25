@@ -1,5 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+:root {
+    --resolution-width: 640px;
+    --resolution-height: 480px;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #434454;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+#menu-screen {
+    width: var(--resolution-width);
+    height: var(--resolution-height);
+    background-color: #101013;
+}
+
+#menu-screen h1 {
+    font-size: 5rem;
 }
